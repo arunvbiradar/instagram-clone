@@ -1,0 +1,296 @@
+@import url(./variables.css);
+@import "./fontawesome/less/fontawesome";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: calc(var(--factor) * 2);
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--background-whitish);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+.list {
+  padding-left: 0;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.list__inline .item {
+  display: inline-block;
+}
+
+/* form elements */
+label {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-gray);
+  margin-bottom: calc(var(--factor) / 2);
+}
+.input__wrapper {
+  margin-bottom: var(--input-margin);
+}
+.input__control {
+  width: 100%;
+  height: var(--input-height);
+  padding: var(--input-padding);
+  background-color: var(--input-bg);
+  border-radius: var(--input-radius);
+  border: 1px solid var(--border-color);
+}
+.input__control:focus-visible {
+  outline: 0;
+}
+.button {
+  width: 100%;
+  cursor: pointer;
+  padding: var(--input-padding);
+  border-radius: var(--input-radius);
+  border: 1px solid var(--border-color);
+}
+.button.button__primary {
+  color: #fff;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+/* floating label */
+.floating__label {
+  position: relative;
+  background-color: var(--input-bg);
+}
+
+.floating__label input {
+  z-index: 1;
+  position: relative;
+  font-size: var(--font-xs);
+  background-color: transparent;
+  transition: padding 0.3s ease-in-out;
+}
+
+.floating__label label {
+  position: absolute;
+  top: calc(var(--factor) * 1.2);
+  left: calc(var(--factor) * 1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating__label input:valid {
+  padding-top: calc(var(--factor) * 2.2);
+  padding-bottom: calc(var(--factor) * 0.8);
+}
+
+.floating__label input:valid + label {
+  font-size: var(--font-xs);
+  top: calc(var(--factor) * 0.5);
+}
+
+/* boxed layout */
+.split__screen,
+.footer__container {
+  margin: auto;
+  max-width: var(--box-layout-width);
+}
+
+/* split screen */
+.split__screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: calc(var(--factor) * 10) calc(var(--factor) * 2)
+    calc(var(--factor) * 7);
+}
+
+.split__screen > div {
+  width: 50%;
+}
+
+/* image slider */
+.imageSlider__container {
+  min-height: 635px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(./../img/slider-bg.png);
+}
+
+.imageSlider__wrapper {
+  top: 26px;
+  left: 156px;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+}
+
+.imageSlider__item {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* sign in container */
+.signIn__container {
+  text-align: center;
+  padding: calc(var(--factor) * 1.5) calc(var(--factor) * 3);
+}
+
+.signIn__container .logo {
+  margin-bottom: calc(var(--factor) * 4);
+}
+
+.signin__form {
+  text-align: left;
+}
+
+.signIn__wrapper,
+.signUp__wrapper {
+  background-color: #fff;
+  margin-bottom: var(--factor);
+  border: 1px solid var(--border-color);
+  margin-right: calc(var(--factor) * 4);
+}
+
+.signIn__wrapper {
+  padding: calc(var(--factor) * 6) calc(var(--factor) * 5)
+    calc(var(--factor) * 2);
+}
+.signIn__wrapper .input__wrapper:last-of-type {
+  margin-top: calc(var(--factor) * 1.5);
+}
+
+.signIn__text {
+  font-weight: 500;
+  position: relative;
+  color: var(--color-gray);
+  font-size: var(--font-sm);
+  text-transform: uppercase;
+  padding: calc(var(--factor) * 2) 0 calc(var(--factor) * 1);
+}
+
+.signIn__text span {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 calc(var(--factor) * 2);
+}
+
+.signIn__text::before {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--border-color);
+}
+
+.signIn__otherButton {
+  padding: calc(var(--factor) * 2) 0;
+}
+
+.signIn__otherButton .fa {
+  font-size: var(--font-df);
+  margin-right: calc(var(--factor) * 0.5);
+}
+.signIn__otherButton.fb a {
+  color: var(--color-fb);
+}
+
+.signIn__otherButton a {
+  font-weight: 500;
+}
+
+.signIn__forgot {
+  font-size: 12px;
+  padding: var(--factor) 0 0;
+}
+
+.signUp__wrapper {
+  padding: calc(var(--factor) * 3) 0;
+}
+
+.signUp__wrapper a {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.getApp__wrapper {
+  padding: calc(var(--factor) * 2);
+}
+
+.getApp__wrapper p {
+  margin-bottom: calc(var(--factor) * 2);
+}
+
+.getApp__wrapper .list__inline {
+  justify-content: center;
+}
+
+.getApp__wrapper .item + .item {
+  margin-left: calc(var(--factor) * 2);
+}
+
+.getApp__wrapper .list__inline img {
+  height: calc(var(--factor) * 5);
+}
+
+/* footer */
+.footer__container {
+  text-align: center;
+  color: var(--color-gray);
+  font-size: var(--font-sm);
+  line-height: calc(var(--factor) * 3);
+  padding: 0 calc(var(--factor) * 3) calc(var(--factor) * 3);
+}
+
+.footer__container .list {
+  justify-content: center;
+}
+
+.footer__container .list + .list {
+  margin-top: calc(var(--factor) * 2);
+}
+
+.footer__container .item {
+  display: inline;
+}
+
+.footer__container .item + .item {
+  margin-left: calc(var(--factor) * 1.5);
+}
+
+.footer__container select {
+  border: 0;
+  color: var(--color-gray);
+  font-size: var(--font-sm);
+  background-color: transparent;
+  max-width: calc(var(--factor) * 8);
+}
+
+/* reponsive */
+@media (max-width: 767px) {
+  .imageSlider__container {
+    display: none;
+  }
+  .split__screen > div {
+    padding: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+  .signIn__wrapper,
+  .signUp__wrapper {
+    margin-right: 0;
+  }
+}

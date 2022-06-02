@@ -1,0 +1,29 @@
+:root {
+  --factor: 8px;
+
+  --box-layout-width: 935px;
+
+  --background-whitish: #fafafa;
+
+  --border-color: #dbdbdb;
+
+  --input-radius: 4px;
+  --input-padding: 10px var(--factor);
+  --input-bg: var(--background-whitish);
+  --input-height: calc(var(--factor) * 4.5);
+  --input-margin: calc(var(--factor) * 0.8);
+
+  --color-gray: #8e8e8e;
+  --color-link: #00376b;
+  --color-black: #262626;
+  --color-primary: #0095f6;
+
+  --color-fb: #385185;
+
+  --md-screen-width: 768px;
+  --small-screens: calc(var(--md-screen-width) - 1);
+
+  --font-df: calc(var(--factor) * 1.9);
+  --font-sm: calc(var(--factor) * 1.5);
+  --font-xs: calc(var(--factor) * 1.4);
+}
