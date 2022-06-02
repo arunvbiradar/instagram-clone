@@ -108,6 +108,7 @@ label {
 .split__screen {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   padding: calc(var(--factor) * 10) calc(var(--factor) * 2)
     calc(var(--factor) * 7);
@@ -139,14 +140,35 @@ label {
   position: absolute;
 }
 
-/* sign in container */
-.signIn__container {
+/* sign in and sign up content */
+.signIn__container,
+.signUp__container {
   text-align: center;
   padding: calc(var(--factor) * 1.5) calc(var(--factor) * 3);
 }
 
-.signIn__container .logo {
+.signIn__container .logo,
+.signUp__container .logo {
   margin-bottom: calc(var(--factor) * 4);
+}
+
+.signIn__wrapper h4 {
+  font-weight: 500;
+  color: var(--color-gray);
+  font-size: var(--font-md);
+}
+
+.signIn__wrapper p {
+  text-align: center;
+  color: var(--color-gray);
+  line-height: calc(var(--factor) * 2.5);
+  font-size: var(--font-sm);
+  margin: calc(var(--factor) * 2) 0;
+}
+
+.signIn__wrapper p a {
+  font-weight: 500;
+  color: var(--color-gray);
 }
 
 .signin__form {
@@ -175,7 +197,7 @@ label {
   color: var(--color-gray);
   font-size: var(--font-sm);
   text-transform: uppercase;
-  padding: calc(var(--factor) * 2) 0 calc(var(--factor) * 1);
+  padding: calc(var(--factor) * 2) 0;
 }
 
 .signIn__text span {
@@ -200,7 +222,8 @@ label {
   padding: calc(var(--factor) * 2) 0;
 }
 
-.signIn__otherButton .fa {
+.signIn__otherButton .fa,
+.signUp__otherButton .fa {
   font-size: var(--font-df);
   margin-right: calc(var(--factor) * 0.5);
 }
@@ -210,6 +233,18 @@ label {
 
 .signIn__otherButton a {
   font-weight: 500;
+}
+
+.signUp__otherButton {
+  border-radius: var(--input-radius);
+  background-color: var(--color-primary);
+}
+
+.signUp__otherButton a {
+  color: #fff;
+  display: block;
+  padding: var(--factor);
+  margin: calc(var(--factor) * 3) 0 0;
 }
 
 .signIn__forgot {

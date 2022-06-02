@@ -23,7 +23,8 @@
   --md-screen-width: 768px;
   --small-screens: calc(var(--md-screen-width) - 1);
 
-  --font-df: calc(var(--factor) * 1.9);
-  --font-sm: calc(var(--factor) * 1.5);
+  --font-md: calc(var(--factor) * 2);
   --font-xs: calc(var(--factor) * 1.4);
+  --font-sm: calc(var(--factor) * 1.5);
+  --font-df: calc(var(--factor) * 1.9);
 }
