@@ -4,6 +4,7 @@
   --box-layout-width: 935px;
 
   --background-whitish: #fafafa;
+  --background-cream: #efefef;
 
   --border-color: #dbdbdb;
 
@@ -13,6 +14,7 @@
   --input-height: calc(var(--factor) * 4.5);
   --input-margin: calc(var(--factor) * 0.8);
 
+  --color-red: red;
   --color-gray: #8e8e8e;
   --color-link: #00376b;
   --color-black: #262626;
@@ -26,5 +28,5 @@
   --font-md: calc(var(--factor) * 2);
   --font-xs: calc(var(--factor) * 1.4);
   --font-sm: calc(var(--factor) * 1.5);
-  --font-df: calc(var(--factor) * 1.9);
+  --font-df: calc(var(--factor) * 1.8);
 }
