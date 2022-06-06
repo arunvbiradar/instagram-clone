@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* sigin in and sign up */
   .imageSlider__container {
     display: none;
@@ -23,10 +23,11 @@
     flex-direction: column;
   }
 
-  .feeds__content,
+  .feeds__content {
+    margin: 0 auto;
+  }
   .feeds__leftContent {
-    padding-left: 0;
-    width: 80%;
+    display: none;
   }
 }
 

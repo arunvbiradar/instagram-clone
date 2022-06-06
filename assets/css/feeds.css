@@ -1,16 +1,16 @@
 .feeds__container .box__container {
   display: flex;
-  padding: 0 var(--factor7x);
+  padding: var(--factor8x) var(--factor7x);
 }
 
 .feeds__content,
-.feeds__leftContent {
-  margin: 0 auto;
+.feeds__leftContent .sticky {
   margin-top: var(--factor3x);
   margin-bottom: var(--factor5x);
 }
 
 .feeds__content {
+  max-width: 100%;
   width: calc(var(--factor) * 60);
 }
 
@@ -129,7 +129,15 @@
 
 /* left content */
 .feeds__leftContent {
+  min-width: 30%;
+}
+.feeds__leftContent .sticky {
+  right: 50%;
+  position: fixed;
+  top: var(--factor8x);
   padding-left: var(--factor4x);
+  width: calc(var(--factor) * 45);
+  transform: translateX(calc(100% + 72px));
 }
 
 .feeds__leftContent a {
