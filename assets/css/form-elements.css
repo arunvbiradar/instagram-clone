@@ -26,11 +26,11 @@ label {
 .button {
   width: 100%;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   border-radius: var(--input-radius);
   border: 1px solid var(--border-color);
-  padding: calc(var(--factor) * 0.6) calc(var(--factor) * 2);
+  padding: calc(var(--factor) * 0.6) calc(var(--factor) * 1.5);
 }
 
 .button.button__primary {

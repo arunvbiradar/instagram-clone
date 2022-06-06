@@ -1,0 +1,33 @@
+.people .feeds__container {
+  margin-top: var(--factor8x);
+}
+
+.feeds__leftContent {
+  margin: 0 auto;
+  max-width: 100%;
+  width: calc(var(--factor) * 75);
+}
+
+.people .profile__suggestionList {
+  padding: var(--factor2x);
+  background-color: #fff;
+  margin-bottom: var(--factor8x);
+}
+
+.people .button {
+  width: auto;
+}
+
+.people .profile__suggestionsTitle h4 {
+  font-size: var(--font-md);
+  color: var(--color-black);
+}
+
+.people .profile__avatar img {
+  width: var(--factor6x);
+  height: var(--factor6x);
+}
+
+.people .feeds__footer {
+  text-align: center;
+}

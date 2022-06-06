@@ -26,12 +26,15 @@
   margin-left: var(--factor2x);
 }
 
+.profile__name,
 .profile__briefText {
   display: block;
   color: var(--color-gray);
-  font-size: var(--font-sm);
   margin-left: var(--factor2x);
   padding-right: var(--factor);
+}
+.profile__briefText {
+  font-size: var(--font-sm);
 }
 
 .profile__briefGroup .dots {
