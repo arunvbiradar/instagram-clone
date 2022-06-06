@@ -1,0 +1,81 @@
+/* form elements */
+label {
+  display: block;
+  font-size: var(--font-sm);
+  color: var(--color-gray);
+  margin-bottom: calc(var(--factor) / 2);
+}
+
+.input__wrapper {
+  margin-bottom: var(--input-margin);
+}
+
+.input__control {
+  width: 100%;
+  height: var(--input-height);
+  padding: var(--input-padding);
+  background-color: var(--input-bg);
+  border-radius: var(--input-radius);
+  border: 1px solid var(--border-color);
+}
+
+.input__control:focus-visible {
+  outline: 0;
+}
+
+.button {
+  width: 100%;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  border-radius: var(--input-radius);
+  border: 1px solid var(--border-color);
+  padding: calc(var(--factor) * 0.6) calc(var(--factor) * 2);
+}
+
+.button.button__primary {
+  color: #fff;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.button__link {
+  border: 0;
+  color: var(--color-primary);
+}
+
+.full__width {
+  width: 100%;
+  display: block;
+}
+
+/* floating label */
+.floating__label {
+  position: relative;
+  background-color: var(--input-bg);
+}
+
+.floating__label input {
+  z-index: 1;
+  position: relative;
+  font-size: var(--font-xs);
+  background-color: transparent;
+  transition: padding 0.3s ease-in-out;
+}
+
+.floating__label label {
+  position: absolute;
+  top: calc(var(--factor) * 1.2);
+  left: calc(var(--factor) * 1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating__label input:valid {
+  padding-top: calc(var(--factor) * 2.2);
+  padding-bottom: calc(var(--factor) * 0.8);
+}
+
+.floating__label input:valid + label {
+  font-size: var(--font-xs);
+  top: calc(var(--factor) * 0.5);
+}

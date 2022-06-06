@@ -1,0 +1,193 @@
+.feeds__container .box__container {
+  display: flex;
+  padding: 0 var(--factor7x);
+}
+
+.feeds__content,
+.feeds__leftContent {
+  margin: 0 auto;
+  margin-top: var(--factor3x);
+  margin-bottom: var(--factor5x);
+}
+
+.feeds__content {
+  width: calc(var(--factor) * 60);
+}
+
+.feeds__card,
+.feeds__header {
+  background-color: #fff;
+  border-radius: var(--factor);
+  border: 1px solid var(--border-color);
+}
+
+/* feed header user brief */
+.feed__list .item a {
+  display: block;
+  text-align: center;
+}
+
+.feed__list .profile__avatar img {
+  width: var(--factor7x);
+  height: var(--factor7x);
+}
+
+.feed__list .username {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  margin-top: var(--factorby2);
+  font-size: var(--font-xs);
+  max-width: var(--factor9x);
+}
+
+/* feeds header */
+.feeds__header {
+  padding: var(--factor2x) var(--factor2x);
+  padding-right: 0;
+}
+
+.feeds__header .feed__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.feed__list .item + .item {
+  margin-left: var(--factor2x);
+}
+
+/* feeds body */
+.feeds__body {
+  margin-top: var(--factor3x);
+}
+
+.feeds__card .profile__briefGroup {
+  margin: 0 var(--factorby2);
+  padding: var(--factor) 0;
+  border-bottom: 1px solid var(--background-cream);
+}
+
+.feeds__card + .feeds__card {
+  margin-top: var(--factor2x);
+}
+
+.feeds__cardMedia img {
+  max-width: 100%;
+}
+
+.feed__cardContent {
+  padding: var(--factor) calc(var(--factor) * 1.2);
+}
+
+.feed__cardLikes,
+.feed__cardLinks {
+  margin-bottom: var(--factor2x);
+}
+
+.feed__cardCreated,
+.feed__cardComments,
+.feed__cardDescription {
+  margin-bottom: var(--factor);
+}
+
+.feed__cardLinks {
+  display: flex;
+  font-size: var(--font-3x);
+}
+
+.feed__cardLinks .item + .item {
+  margin-left: var(--factor2x);
+}
+
+.feed__cardLinks .links__right {
+  margin-left: auto;
+}
+
+.feed__cardLikes {
+  font-weight: 600;
+  margin-bottom: var(--factor);
+}
+
+.feed__userComent {
+  max-width: 87%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.feed__cardCreated {
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+}
+
+.feed__postComment {
+  border-top: 1px solid var(--background-cream);
+}
+
+/* left content */
+.feeds__leftContent {
+  padding-left: var(--factor4x);
+}
+
+.feeds__leftContent a {
+  font-weight: 500;
+  margin-left: auto;
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+}
+
+.feeds__leftContent .profile__switch {
+  margin: var(--factor2x) 0;
+}
+
+.feeds__leftContent .profile__suggestionsTitle {
+  margin-bottom: calc(var(--factor) * 1.5);
+}
+
+.feeds__leftContent .profile__suggestionsTitle a {
+  color: var(--color-black);
+}
+
+.feeds__leftContent .profile__avatar {
+  border: 0;
+  padding: 0;
+}
+
+.feeds__leftContent .profile__switch img {
+  width: var(--factor7x);
+  height: var(--factor7x);
+}
+
+.feeds__leftContent .profile__suggestions {
+  margin-bottom: var(--factor4x);
+}
+
+/* footer */
+.feeds__footer .list {
+  font-size: var(--font-sm);
+  color: var(--color-grayLt);
+  margin-bottom: var(--factor);
+}
+
+.feeds__footer .item:before {
+  top: -2px;
+  content: ".";
+  display: none;
+  line-height: 2px;
+  margin-right: 4px;
+  position: relative;
+  font-size: var(--factor2x);
+}
+
+.feeds__footer .item + .item:before {
+  display: inline-block;
+}
+
+.feeds__footer .feeds__copyright {
+  font-size: var(--font-sm);
+  text-transform: uppercase;
+  color: var(--color-grayLt);
+}

@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+  /* sigin in and sign up */
+  .imageSlider__container {
+    display: none;
+  }
+  .split__screen > div {
+    padding: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+  .signIn__wrapper,
+  .signUp__wrapper {
+    margin-right: 0;
+  }
+
+  /* header */
+  header .search {
+    display: none;
+  }
+
+  /* feeds page */
+  .feeds__container .box__container {
+    flex-direction: column;
+  }
+
+  .feeds__content,
+  .feeds__leftContent {
+    padding-left: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+}

@@ -1,0 +1,26 @@
+.post__group {
+  display: flex;
+  align-items: center;
+  padding: var(--factor) calc(var(--factor) * 1.2);
+}
+
+.post__groupSmileys {
+  font-size: var(--font-3x);
+}
+
+.post__groupInput {
+  border: 0;
+  background: transparent;
+  margin: 0 var(--factorby2);
+}
+
+.post__groupInput::placeholder {
+  color: var(--color-gray);
+}
+
+.post__groupButton {
+  padding: 0;
+  width: auto;
+  font-weight: 600;
+  background: transparent;
+}

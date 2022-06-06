@@ -1,5 +1,15 @@
 :root {
   --factor: 8px;
+  --factor2x: calc(var(--factor) * 2);
+  --factor3x: calc(var(--factor) * 3);
+  --factor4x: calc(var(--factor) * 4);
+  --factor5x: calc(var(--factor) * 5);
+  --factor6x: calc(var(--factor) * 6);
+  --factor7x: calc(var(--factor) * 7);
+  --factor8x: calc(var(--factor) * 8);
+  --factor9x: calc(var(--factor) * 9);
+  --factor10x: calc(var(--factor) * 10);
+  --factorby2: calc(var(--factor) / 2);
 
   --box-layout-width: 935px;
 
@@ -16,9 +26,11 @@
 
   --color-red: red;
   --color-gray: #8e8e8e;
+  --color-grayLt: #c7c7c7;
   --color-link: #00376b;
   --color-black: #262626;
   --color-primary: #0095f6;
+  --color-pink: #f67bad;
 
   --color-fb: #385185;
 
@@ -26,6 +38,7 @@
   --small-screens: calc(var(--md-screen-width) - 1);
 
   --font-md: calc(var(--factor) * 2);
+  --font-3x: calc(var(--factor) * 3);
   --font-xs: calc(var(--factor) * 1.4);
   --font-sm: calc(var(--factor) * 1.5);
   --font-df: calc(var(--factor) * 1.8);

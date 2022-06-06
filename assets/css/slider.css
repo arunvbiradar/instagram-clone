@@ -1,0 +1,21 @@
+/* image slider */
+.imageSlider__container {
+  min-height: 635px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(./../img/slider-bg.png);
+}
+
+.imageSlider__wrapper {
+  top: 26px;
+  left: 156px;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+}
+
+.imageSlider__item {
+  top: 0;
+  left: 0;
+  position: absolute;
+}

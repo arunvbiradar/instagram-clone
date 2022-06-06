@@ -1,0 +1,55 @@
+.profile__briefGroup {
+  display: flex;
+  align-items: center;
+}
+
+.profile__avatar img {
+  width: var(--factor4x);
+  height: var(--factor4x);
+}
+
+.profile__avatar {
+  padding: 2px;
+  border-radius: 50%;
+  display: inline-flex;
+  border: 2px solid var(--color-pink);
+}
+
+/* profile suggestion */
+.profile__suggestionList .profile__briefGroup + .profile__briefGroup {
+  margin-top: var(--factor);
+}
+
+.profile__briefGroup .profile__username {
+  font-weight: 600;
+  display: inline-flex;
+  margin-left: var(--factor2x);
+}
+
+.profile__briefText {
+  display: block;
+  color: var(--color-gray);
+  font-size: var(--font-sm);
+  margin-left: var(--factor2x);
+  padding-right: var(--factor);
+}
+
+.profile__briefGroup .dots {
+  margin-left: auto;
+  font-size: var(--font-3x);
+  margin-right: var(--factor);
+  margin-top: calc(var(--factor) * -1);
+}
+
+.profile__briefGroup .profile__switch .profile__avatar img {
+  width: var(--factor7x);
+  height: var(--factor7x);
+}
+
+.profile__suggestionsTitle {
+  display: flex;
+}
+
+.profile__suggestionsTitle h4 {
+  color: var(--color-gray);
+}
