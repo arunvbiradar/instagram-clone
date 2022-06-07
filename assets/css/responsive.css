@@ -31,5 +31,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  /* explore page */
+  .story__item {
+    padding: 0 1px;
+    margin-bottom: 2px;
+  }
 }

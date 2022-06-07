@@ -111,6 +111,10 @@ header .input__control {
   border-radius: calc(var(--input-radius) * 2);
 }
 
+.header__link a {
+  color: var(--color-black);
+}
+
 header i {
   max-width: 24px;
   font-size: calc(var(--factor) * 2.8);
