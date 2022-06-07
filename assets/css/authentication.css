@@ -161,6 +161,7 @@
 }
 
 .saveCredetials__container {
+  margin: auto;
   text-align: center;
   padding: calc(var(--factor) * 3) calc(var(--factor) * 5);
 }
